@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect</title>
+    <link rel="stylesheet" href="projektstyle.css">
+    <link rel="stylesheet" href="connect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo"><a href="home.html">LOGO</a></div>
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-items">
+                <li><a href="home.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="browse.html" aria-label="Browse the content">Browse</a></li>
+                <li><a href="connect.html" aria-label="Connect with us">Connect</a></li>
+                <li><input type="text" id="search-input" placeholder="Search" autocomplete="off" aria-label="Search the site"></li>
+            </ul>
+        </nav>
+        <div id="banner">
+            <img id="bannerImage" src="" alt="Image banner representing various movies, tv-shows and video-games">
+        </div>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                <span class="slider">
+                    <span class="sun-icon"><i class="fa-solid fa-sun"></i></span>
+                    <span class="moon-icon"><i class="fa-solid fa-moon"></i></span>
+                </span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="form-wrapper">
+                <form id="suggestionForm" method="POST" onsubmit="handleSubmit(event)">
+                    <div class="container">
+                        <h2>Send us a message!</h2>
+                        <p>We invite you to share your thoughts, suggestions, or recommendations with us! 
+                            Whether you have a creative concept, a unique perspective, or innovative ideas, 
+                            we want to hear from you. 
+                            This is your opportunity to contribute to our community and help us grow. 
+                            Your insights can inspire new initiatives and enhance our collective experience. 
+                            Please fill out the form below to share what's on your mind!</p>
+                        <div class="input-container">
+                            <input type="text" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+" title="Please enter letters only.">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Thoughts or Recommendations" required></textarea>
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div class="form-wrapper">
+                <form id="subscribeForm" method="POST" onsubmit="handleSubmit(event)">
+                    <div class="container">
+                        <h2>Subscribe to recieve updates on our content!</h2>
+                        <p>Stay ahead of the entertainment curve by subscribing to our blog dedicated to in-depth reviews of movies, 
+                            TV shows, and video games—new and old alike! By signing up, you'll receive regular updates straight to your inbox, 
+                            ensuring you never miss out on our insightful reviews and recommendations.
+                            <br>
+                            <br>
+                            We dive deep into each piece of content, offering you unique perspectives and opinions. 
+                            Whether you're looking for the next binge-worthy series, an exciting game to play, or a must-see film, 
+                            our blog is your go-to resource.
+                            <br>
+                            <br>
+                            Join our community of fellow entertainment enthusiasts and enjoy engaging discussions, trends, 
+                            and tips that enhance your viewing and gaming experiences. 
+                            Simply enter your email address below to start your journey into the world of entertainment!</p>
+                        <div class="input-container">
+                            <input type="text" placeholder="Your name" name="name" required pattern="[A-Za-z\s]+" title="Please enter letters only.">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <label class="subscribe-label">
+                                <input type="checkbox" name="subscribe" required> I want to receive updates
+                            </label>
+                            <input type="submit" value="Subscribe" class="submit-button">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>        
+    </main>
+    <button onclick="topFunction()" id="topBtn" title="Go to top" aria-label="Scroll to the top of the page">Top</button>
+    <hr>
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <a href="home.html">LOGO</a>
+            </div>
+            <div class="social-media-icons">
+                <div><a href="https://twitter.com/memme_93" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <div><a href="https://www.instagram.com/melinahansson/" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div><a href="https://letterboxd.com/melinahansson/" aria-label="Follow us on Letterboxd" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-letterboxd"></i></a>
+                </div>
+                <div><a href="https://stopexit.tumblr.com/" aria-label="Follow us on Tumblr" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-tumblr"></i></a>
+                </div>
+                <div><a href="https://steamcommunity.com/profiles/76561198346319473/" aria-label="Follow us on Steam" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-steam"></i></a>
+                </div>
+                <div><a href="https://discord.com/users/melliemooo" aria-label="Follow us on Discord" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <p>Copyright &copy; 2025 Melina Hansson</p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="home.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="browse.html" aria-label="Browse the content">Browse</a></li>
+                <li><a href="connect.html" aria-label="Connect with us">Connect</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="projekt.js"></script>
+    <script src="https://kit.fontawesome.com/9a7aecf1ab.js" crossorigin="anonymous"></script>
+</body>
+</html>

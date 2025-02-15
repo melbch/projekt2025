@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Browse</title>
+	<link rel="stylesheet" href="projektstyle.css">
+  	<link rel="stylesheet" href="browse.css">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  	<header>
+    	<nav class="nav">
+      		<div class="logo"><a href="home.html">LOGO</a></div>
+			<div class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu"><i class="fa-solid fa-bars"></i></div>
+      		<ul class="nav-items">
+        		<li><a href="home.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="browse.html" aria-label="Browse the content">Browse</a></li>
+                <li><a href="connect.html" aria-label="Connect with us">Connect</a></li>
+        		<li><input type="text" id="search-input" placeholder="Search" autocomplete="off" aria-label="Search the site"></li>
+      		</ul>
+    	</nav>
+    	<div id="banner">
+      		<img id="bannerImage" src="" alt="Image banner representing various movies, tv-shows and video-games">
+    	</div>
+    	<div class="toggle-container">
+      		<label class="switch">
+          		<input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+          		<span class="slider">
+              		<span class="sun-icon"><i class="fa-solid fa-sun"></i></span>
+              		<span class="moon-icon"><i class="fa-solid fa-moon"></i></span>
+          		</span>
+      		</label>
+  		</div>
+  	</header>
+  	<main>
+    	<div id="showAllBtnContainer">
+      		<button class="showAllBtn btn" aria-label="Show all gallery items"> Show all</button>
+    	</div> 
+    	<div id="mediumBtnContainer"> 
+      		<p>Filter by medium</p>
+      		<button class="mediumBtn btn" aria-label="Filter by Film"> Film</button>
+			<button class="mediumBtn btn" aria-label="Filter by TV"> TV</button>
+      		<button class="mediumBtn btn" aria-label="Filter by Games"> Games</button>
+   		</div>
+    	<div id="genreBtnContainer"> 
+      		<p>Filter by genre</p>
+      		<button class="genreBtn btn" aria-label="Filter by Fantasy"> Fantasy</button>
+      		<button class="genreBtn btn" aria-label="Filter by Comedy"> Comedy</button>
+      		<button class="genreBtn btn" aria-label="Filter by Action"> Action</button>
+      		<button class="genreBtn btn" aria-label="Filter by Horror"> Horror</button>
+      		<button class="genreBtn btn" aria-label="Filter by Thriller"> Thriller</button>
+      		<button class="genreBtn btn" aria-label="Filter by Adventure"> Adventure</button>
+      		<button class="genreBtn btn" aria-label="Filter by Superhero"> Superhero</button>
+      		<button class="genreBtn btn" aria-label="Filter by Classics"> Classics</button>
+      		<button class="genreBtn btn" aria-label="Filter by Drama"> Drama</button>
+      		<button class="genreBtn btn" aria-label="Filter by Sci-fi"> Sci-fi</button>
+      		<button class="genreBtn btn" aria-label="Filter by Animation"> Animation</button>
+      		<button class="genreBtn btn" aria-label="Filter by Crime"> Crime</button>
+      		<button class="genreBtn btn" aria-label="Filter by Space"> Space</button>
+    	</div>  
+
+    	<div class="row">
+      		<div class="column tv crime drama superhero">
+        		<div class="gallery-item">
+          			<a href="focus.html">
+          			<img src="https://i.pinimg.com/originals/57/94/55/57945576450ca28840c098b4ee85a9cc.jpg" alt="The Penguin poster" loading="lazy">
+          			</a>
+        		</div>
+      		</div>
+      		<div class="column tv animation fantasy action adventure drama">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BYjA2NzhlMDItNWRmZC00MzRjLWE3ZjAtZjBlZDAwOWY2ODdjXkEyXkFqcGc@._V1_.jpg" alt="Arcane poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column tv drama sci-fi thriller">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/I/91s-HDqTC4L.jpg" alt="Fringe poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column tv sci-fi adventure action drama space">
+        		<div class="gallery-item">
+          			<img src="https://image.tmdb.org/t/p/original//99PJSbcO2LeM10uOGWeFihNp77j.jpg" alt="Battlestar Galactica poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column tv drama comedy">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BZmI3YWVhM2UtNDZjMC00YTIzLWI2NGUtZWIxODZkZjVmYTg1XkEyXkFqcGc@._V1_.jpg" alt="Ted Lasso poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column tv crime drama classics">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BOWFjZTMzOGEtZjVjYS00N2NhLWFiZjktZThiZWJmNmU5NDI3XkEyXkFqcGc@._V1_.jpg" alt="Twin Peaks poster" loading="lazy">
+        		</div>
+      		</div>
+          
+      		<div class="column games adventure crime drama action">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BNzRhZjRhNTAtMGM5MS00YWRkLWE0ZmQtY2M2MjM2NmM4NTI5XkEyXkFqcGc@._V1_.jpg" alt="Red Dead Redemption II poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column games">
+        		<div class="gallery-item action adventure drama fantasy">
+          			<img src="https://m.media-amazon.com/images/M/MV5BMWM4YWJhZGEtMjlmMC00OWE5LWI4MGEtZDNkOTcwNTFkZmJhXkEyXkFqcGc@._V1_.jpg" alt="Dragon Age II poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column games action adventure fantasy classics">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BZmYxYzI4N2QtYmE1Ny00OTdiLWJmMTQtYzdmZWRlZGI4MDEzXkEyXkFqcGc@._V1_.jpg" alt="The Legend of Zelda: Ocarina of Time poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column games action adventure drama">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BNGZlMGI1YWUtODU5YS00YzRjLWJiZTMtNTQzYzg0Yjc4Njg4XkEyXkFqcGc@._V1_.jpg" alt="Ghost of Tsushima poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column games action adventure drama sci-fi space">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BYzVmMjBlOGQtM2VjZS00ZGQ0LWIwM2YtYzNmOGQzY2Q0YTcwXkEyXkFqcGc@._V1_.jpg" alt="Mass Effect poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column games fantasy horror adventure action drama">
+        		<div class="gallery-item">
+          			<img src="https://image.api.playstation.com/vulcan/ap/rnd/202211/0714/ojKZ7l0T2M5egR9YHIjVhI0R.png" alt="The Witcher 3: Wild Hunt poster" loading="lazy">
+        		</div>
+      		</div>
+          
+      		<div class="column film adventure fantasy drama">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/I/81EBp0vOZZL.jpg" alt="Lord of the Rings: The Fellowship of the Ring poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film action sci-fi">
+       			<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BNThiYTQzOTUtNmFjYy00OWEwLTg2NWUtMmM3NGE0YjFjOWRjXkEyXkFqcGc@._V1_.jpg" alt="The Matrix poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film horror space sci-fi classics">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BNTU1NDk5NmEtZmJkYi00NGE1LTgwNjktNTJiNTAxNzdiMzY2XkEyXkFqcGc@._V1_.jpg" alt="Alien poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film superhero action drama thriller crime">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" alt="The Dark Knight poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film comedy action thriller">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BMjEwMzY2NTgxM15BMl5BanBnXkFtZTcwMTg3MDM0MQ@@._V1_.jpg" alt="Hot Fuzz poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film animation fantasy adventure">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg" alt="Spirited Away poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film adventure action comedy fantasy sci-fi">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/I/819nOOq5HFL.jpg" alt="Everything Everywhere All at Once poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film classics drama">
+        		<div class="gallery-item">
+          			<img src="https://cdn.posteritati.com/posters/000/000/068/852/good-will-hunting-md-web.jpg" alt="Good Will Hunting poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film classics comedy drama">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_.jpg" alt="The Truman Show poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film classics crime drama thriller">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BZThjYTFkNTMtOGMwZS00NTlhLWI4YzktMmI1NjI0MzJiNzFkXkEyXkFqcGc@._V1_.jpg" alt="The Silence of the Lambs poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film drama thriller horror">
+        		<div class="gallery-item">
+          			<img src="https://m.media-amazon.com/images/M/MV5BYzc5Y2UyMTMtZTcyNC00Y2M0LWJmOTItNmUzMWIzYjI4MzgwXkEyXkFqcGc@._V1_.jpg" alt="Midsommar poster" loading="lazy">
+        		</div>
+      		</div>
+      		<div class="column film adventure drama sci-fi space">
+        		<div class="gallery-item">
+          			<img src="https://i.ebayimg.com/images/g/zu4AAOSw2spbJQ0J/s-l1200.jpg" alt="Interstellar poster" loading="lazy">
+        		</div>
+      		</div>
+    	</div>
+  	</main>
+  	<button onclick="topFunction()" id="topBtn" title="Go to top" aria-label="Scroll to the top of the page">Top</button>
+  	<hr>
+  	<footer class="footer">
+    	<div class="footer-left">
+      		<div class="footer-logo">
+        		<a href="home.html">LOGO</a>
+      		</div>
+      		<div class="social-media-icons">
+				<div><a href="https://twitter.com/memme_93" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <div><a href="https://www.instagram.com/melinahansson/" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div><a href="https://letterboxd.com/melinahansson/" aria-label="Follow us on Letterboxd" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-letterboxd"></i></a>
+                </div>
+                <div><a href="https://stopexit.tumblr.com/" aria-label="Follow us on Tumblr" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-tumblr"></i></a>
+                </div>
+                <div><a href="https://steamcommunity.com/profiles/76561198346319473/" aria-label="Follow us on Steam" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-steam"></i></a>
+                </div>
+                <div><a href="https://discord.com/users/melliemooo" aria-label="Follow us on Discord" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-discord"></i></a>
+                </div>
+      		</div>
+        	<p>Copyright &copy; 2025 Melina Hansson</p>
+    	</div>
+    	<div class="footer-links">
+        	<ul>
+				<li><a href="home.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="browse.html" aria-label="Browse the content">Browse</a></li>
+                <li><a href="connect.html" aria-label="Connect with us">Connect</a></li>
+        	</ul>
+    	</div>
+  	</footer>
+  	<script src="projekt.js"></script>
+	<script src="https://kit.fontawesome.com/9a7aecf1ab.js" crossorigin="anonymous"></script>
+</body>
+</html>

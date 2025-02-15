@@ -1,0 +1,252 @@
+.form-wrapper {
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Silkscreen', sans-serif; 
+}
+
+p {
+    text-align: justify;
+    font-family: 'Public Sans', sans-serif; 
+    font-size: 13px;
+}
+
+.container {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(240, 240, 240, 0.4);
+}
+
+.dark-mode .container {
+    box-shadow: 0 2px 4px rgba(39, 38, 38, 0.1);
+    background-color: #181818;
+}
+
+.container,
+.input-container {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.subscribe-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 8px 0;
+}
+
+input[type=text], 
+input[type=submit],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 3px;
+    box-sizing: border-box;
+} 
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"] {
+    box-shadow: 0 2px 4px rgba(39, 38, 38, 0.1);
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border-color: darkseagreen;
+    outline: none; 
+}
+
+input[type=submit] {
+    background-color: darkseagreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.dark-mode input[type="submit"] {
+    background-color: darkseagreen;
+    opacity: 0.7;
+}
+
+input[type=submit]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+textarea {
+    height: 150px; 
+    resize: none;
+    overflow: auto;
+}
+
+.dark-mode textarea {
+    box-shadow: 0 2px 4px rgba(39, 38, 38, 0.1);
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+@media (max-width: 575.99px) {
+    p {
+        font-size: 12.5px;
+    }
+
+    .subscribe-label {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container,
+    .input-container {
+        width: 85%;
+    }   
+
+    .subscribe-label {
+        width: 80%;
+    }
+
+    .subscribe-label input[type=checkbox] {
+        margin-right: 3px;
+    }
+
+    input[type=text], 
+    input[type=submit],
+    input[type=email],
+    textarea {
+        width: 80%;
+        font-size: 13px;
+        max-width: 500px;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        padding: 15px;
+    }
+
+    .container,
+    .input-container {
+        width: 85%;
+    }   
+
+    .subscribe-label {
+        width: 65%;
+        font-size: 11px;
+    }
+
+    .subscribe-label input[type=checkbox] {
+        margin-right: 3px;
+    }
+
+    input[type=text], 
+    input[type=submit],
+    input[type=email],
+    textarea {
+        width: 65%;
+        font-size: 11px;
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        padding: 15px;
+        margin: 8px;
+    }
+
+    .container,
+    .input-container {
+        width: 85%;
+    }   
+
+    .subscribe-label {
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .subscribe-label input[type=checkbox] {
+        margin-right: 3px;
+    }
+
+    input[type=text], 
+    input[type=submit],
+    input[type=email],
+    textarea {
+        width: 60%;
+        font-size: 12px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .container,
+    .input-container {
+        width: 70%;
+    }   
+
+    .subscribe-label {
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .subscribe-label input[type=checkbox] {
+        margin-right: 3px;
+    }
+
+    input[type=text], 
+    input[type=submit],
+    input[type=email],
+    textarea {
+        width: 60%;
+        font-size: 12px;
+        max-width: 400px;
+    }
+}

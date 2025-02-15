@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGO</title>
+    <link rel="stylesheet" href="projektstyle.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo"><a href="home.html">LOGO</a></div>
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-items">
+                <li><a href="home.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="browse.html" aria-label="Browse the content">Browse</a></li>
+                <li><a href="connect.html" aria-label="Connect with us">Connect</a></li>
+                <li><input type="text" id="search-input" placeholder="Search" autocomplete="off" aria-label="Search the site"></li>
+            </ul>
+        </nav>
+        <div id="banner">
+            <img id="bannerImage" src="" alt="Image banner representing various movies, tv-shows and video-games">
+        </div>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                <span class="slider">
+                    <span class="sun-icon"><i class="fa-solid fa-sun"></i></span>
+                    <span class="moon-icon"><i class="fa-solid fa-moon"></i></span>
+                </span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article class="abstract clearfix">
+                <div class="abstract-container">
+                    <img src="https://cdn.tvfanatic.com/uploads/2024/11/The-Penguin-Season-1-Episode-8-99.jpg" alt="closeup of Oswald Cobb from the tv-show The Penguin" class="abstract-img" loading="lazy">
+                    <h2>The Penguin</h2>
+                    <h3>S1.E8 - <em>"A Great or Little Thing"</em></h3>
+                    <div class="star-rating" data-fill="4"></div>
+                    <p>In the final episode, the tension ramps up as the Penguin grapples with his ambitions 
+                        and the weight of the decisions he must make. 
+                        The writing effectively captures the complexities of loyalty and power, 
+                        making the stakes feel incredibly high. As the episode unfolds, 
+                        viewers are drawn into the Penguin's world, 
+                        highlighting not only his internal struggles but also 
+                        the external pressures that threaten to unravel everything he has worked for. 
+                        This exploration of ambition and its consequences adds a layer of depth that keeps the audience engaged.</p>
+                    <p>The performances in this episode are particularly noteworthy. 
+                        Both Colin Farrell and Cristin Miliotti deliver nuanced performances, 
+                        showcasing a compelling mix of vulnerability and fierce determination. 
+                        Each scene feels significant, as the supporting cast also shines by bringing 
+                        their own unique motivations and conflicts into play. 
+                        This ensemble adds richness to the narrative, 
+                        making the dynamics between characters feel authentic and layered. 
+                        The interactions are well-crafted, enhancing the overall tension and drama that permeate the episode.</p>
+                    <p>Visually, the episode captivates with striking cinematography that enhances the mood and atmosphere throughout. 
+                        The careful attention to visual storytelling complements the pacing, 
+                        which balances suspense and character development effectively. 
+                        Each scene is thoughtfully constructed, drawing viewers deeper into the plot while maintaining a steady rhythm. 
+                        Overall, the finale stands out as a strong entry in the series, 
+                        leaving viewers eager to see how the unfolding drama will shape the future of the Penguin and the world around him...</p>
+                    <div class="readMoreContainer">
+                        <a href="article.html" class="readMoreBtn">Read More</a>
+                    </div> 
+                </div>
+            </article>
+            <article class="abstract clearfix">
+                <div class="abstract-container">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNThiYTQzOTUtNmFjYy00OWEwLTg2NWUtMmM3NGE0YjFjOWRjXkEyXkFqcGc@._V1_.jpg" alt="poster for the 1999 movie Matrix" class="abstract-img" loading="lazy">
+                    <h2>The Matrix</h2>
+                    <h3><em>Free your mind</em></h3>
+                    <div class="star-rating" data-fill="5"></div>
+                    <p><em>The Matrix</em> is a groundbreaking film that redefined the science fiction genre and left an indelible mark on cinema. 
+                        Directed by the Wachowskis, this 1999 classic combines stunning visual effects, 
+                        a compelling storyline, and philosophical depth that resonates with audiences even today. 
+                        From its iconic bullet-dodging scenes to the revolutionary use of "bullet time," 
+                        the film sets a high bar for action and visual storytelling.</p>
+                    <p>The narrative revolves around Neo, played brilliantly by Keanu Reeves, 
+                        who embarks on a journey of self-discovery in a dystopian future. 
+                        The film's exploration of reality versus illusion raises profound questions about existence, 
+                        freedom, and the nature of choice. 
+                        The supporting cast, including Laurence Fishburne as Morpheus and Carrie-Anne Moss as Trinity, 
+                        delivers powerful performances that enhance the film's emotional weight.</p>
+                    <p>Moreover, <em>The Matrix</em> masterfully blends action and philosophy, making it more than just a typical sci-fi flick. 
+                        Its themes of rebellion against oppressive systems and the quest for truth resonate deeply with viewers. 
+                        The film's impact is still felt today, influencing countless filmmakers and inspiring a generation of fans. 
+                        It's a cinematic experience that is both thrilling and thought-provoking...</p>
+                    <div class="readMoreContainer">
+                        <a href="article.html" class="readMoreBtn">Read More</a>
+                    </div> 
+                </div>
+            </article>
+            <article class="abstract clearfix">
+                <div class="abstract-container">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzRhZjRhNTAtMGM5MS00YWRkLWE0ZmQtY2M2MjM2NmM4NTI5XkEyXkFqcGc@._V1_.jpg" alt="Poster for the 2018 video-game Red Dead Redemption 2" class="abstract-img" loading="lazy">
+                    <h2>Red Dead Redemption 2</h2>
+                    <h3><em>Outlaws for Life</em></h3>
+                    <div class="star-rating" data-fill="5"></div>
+                    <p><em>Red Dead Redemption 2</em> is nothing short of a masterpiece in the world of video games. 
+                        From the moment you step into the boots of Arthur Morgan, 
+                        you are transported to a meticulously crafted open world that feels alive and vibrant. 
+                        The attention to detail is astounding, with every element—from the weather patterns to the wildlife—
+                        contributing to an immersive experience that is both breathtaking and haunting. 
+                        The game's narrative, rich with character development and moral complexity, 
+                        grips you from start to finish, making you truly care about the fate of the Van der Linde gang.</p>
+                    <p>The gameplay mechanics are a perfect blend of exploration, action, and storytelling. 
+                        Whether you're engaging in epic shootouts, hunting for supplies, 
+                        or simply riding through the stunning landscapes, the controls feel smooth and intuitive. 
+                        The honor system adds an intriguing layer to your choices, allowing for multiple playstyles and outcomes. 
+                        Every decision you make has consequences, which enhances the emotional weight of the narrative 
+                        and creates a truly personal journey.</p>
+                    <p>Visually, <em>Red Dead Redemption 2</em>sets a new standard for realism in gaming. 
+                        he graphics are stunning, with breathtaking vistas and meticulously designed towns that 
+                        transport you back to the late 1800s. Coupled with an incredible soundtrack and voice acting, 
+                        every moment in the game is an experience to be savored. 
+                        This is more than just a game; it's a work of art that deserves to be experienced by everyone...</p>
+                    <div class="readMoreContainer">
+                        <a href="article.html" class="readMoreBtn">Read More</a>
+                    </div> 
+                </div>
+            </article>
+            <article class="abstract clearfix">
+                <div class="abstract-container">
+                    <img src="https://m.media-amazon.com/images/I/81EBp0vOZZL.jpg" alt="Poster for the 2001 movie The Lord of the Rings: The Fellowship of the Ring" class="abstract-img" loading="lazy">
+                    <h2>The Lord of the Rings: The Fellowship of the Ring</h2>
+                    <h3><em>The Legend Comes to Life</em></h3>
+                    <div class="star-rating" data-fill="5"></div>
+                    <p><em>The Lord of the Rings: The Fellowship of the Ring</em> is a cinematic triumph that masterfully 
+                        brings J.R.R. Tolkien's epic novel to life. From the very first frame, viewers are 
+                        transported to the enchanting world of Middle-earth, where stunning landscapes and 
+                        intricate set designs create a rich backdrop for an unforgettable adventure. 
+                        Peter Jackson's direction, combined with Howard Shore's haunting score, sets the perfect tone, 
+                        drawing audiences into a story of friendship, bravery, and the struggle against evil.</p>
+                    <p>The film excels in its character development, showcasing a diverse cast of characters, 
+                        each with their own motivations and arcs. Frodo Baggins, portrayed brilliantly by Elijah Wood, 
+                        embodies the reluctant hero, while Ian McKellen's Gandalf offers wisdom and strength. 
+                        The chemistry among the members of the Fellowship is palpable, 
+                        making their journey feel both epic and deeply personal. 
+                        The film does an exceptional job of balancing action and character moments, 
+                        allowing viewers to connect emotionally with each member of the Fellowship.</p>
+                    <p>Visually, <em>The Fellowship of the Ring</em> is nothing short of breathtaking. 
+                        The special effects, combined with practical effects and stunning cinematography, 
+                        create a visually captivating experience. Every battle scene is meticulously choreographed, 
+                        and the landscapes of New Zealand serve as a perfect stand-in for Middle-earth. 
+                        This film not only set a new standard for fantasy cinema but also established the groundwork 
+                        for an incredible trilogy that would change the landscape of filmmaking forever...</p>
+                    <div class="readMoreContainer">
+                        <a href="article.html" class="readMoreBtn">Read More</a>
+                    </div> 
+                </div> 
+            </article>
+            <br>
+            <button id="showMoreBtn" onclick="toggleMoreAbstracts()">Show More</button>
+
+            <div id="moreAbstracts" style="display:none;">
+                <article class="abstract clearfix">
+                    <div class="abstract-container">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjA2NzhlMDItNWRmZC00MzRjLWE3ZjAtZjBlZDAwOWY2ODdjXkEyXkFqcGc@._V1_.jpg" alt="Poster art for the first season of Arcane" class="abstract-img" loading="lazy">
+                        <h2>Arcane</h2>
+                        <h3>S1.E1 - <em>"Welcome to the Playground"</em></h3>
+                        <div class="star-rating" data-fill="4"></div>
+                        <p>The pilot episode of <em>Arcane</em> is a stunning introduction to a vibrant and 
+                            intricately crafted world that captivates viewers from the very first frame. 
+                            Adapted from the popular video game <em>League of Legends</em>, 
+                            the series sets itself apart with its unique visual style, 
+                            combining hand-painted textures and dynamic animation that create a visually arresting experience. 
+                            The rich color palette and detailed character designs bring the city of Piltover and 
+                            the undercity of Zaun to life, immersing the audience in a beautifully realized universe.</p>
+                        <p>The storytelling in this pilot is compelling, introducing us to the complex relationship between two sisters, 
+                            Vi and Powder (later known as Jinx), as they navigate the challenges of their environment. 
+                            The emotional depth of their bond is palpable, 
+                            and the writing effectively establishes the stakes for both characters. 
+                            The episode does an excellent job of balancing action and character development, 
+                            allowing viewers to invest in the characters' journeys right from the start.</p>
+                        <p>While the episode is visually and narratively strong, it does feel slightly rushed at times. 
+                            The pacing occasionally sacrifices the opportunity to explore certain themes and 
+                            character backstories in greater depth, which may leave some viewers wanting more context. 
+                            However, this is a minor issue in an otherwise engaging pilot that skillfully 
+                            sets the stage for the rest of the series...</p>
+                        <div class="readMoreContainer">
+                            <a href="article.html" class="readMoreBtn">Read More</a>
+                        </div> 
+                    </div>
+                </article>
+                <article class="abstract clearfix">
+                    <div class="abstract-container">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMWM4YWJhZGEtMjlmMC00OWE5LWI4MGEtZDNkOTcwNTFkZmJhXkEyXkFqcGc@._V1_.jpg" alt="cover art for the 2011 video-game Dragon Age II" class="abstract-img" loading="lazy">
+                        <h2>Dragon Age II</h2>
+                        <h3><em>There are men who embrace destiny; these are the ones that change the world forever</em></h3>
+                        <div class="star-rating" data-fill="3.5"></div>
+                        <p><em>Dragon Age II</em> is an ambitious entry in the beloved RPG franchise that offers 
+                            a bold narrative and engaging character development, though it stumbles in some areas. 
+                            Set in the city of Kirkwall, the game focuses on the journey of Hawke, 
+                            a refugee who rises to prominence amidst political intrigue and conflict. 
+                            The character customization options are robust, allowing players to shape Hawke's identity and story, 
+                            which adds a personal touch to the experience.</p>
+                        <p>The narrative structure is one of the game's highlights, 
+                            with a storytelling approach that spans several years. 
+                            This allows players to witness the consequences of their choices over time, 
+                            creating a sense of weight and investment in the unfolding events. 
+                            The relationships with companions are well-developed, 
+                            and the dialogue options provide meaningful choices that impact character dynamics. 
+                            The voice acting is strong, with a talented cast bringing depth to each character.</p>
+                        <p>However, <em>Dragon Age II</em> faces criticism for its repetitive environments and quest design. 
+                            Many locations feel recycled, which can detract from the immersive experience. 
+                            The game often relies on similar dungeon layouts and mission types, 
+                            leading to a sense of monotony as players progress through the story. 
+                            While the narrative and character moments shine, the gameplay can feel 
+                            less varied compared to its predecessor...</p>
+                        <div class="readMoreContainer">
+                            <a href="article.html" class="readMoreBtn">Read More</a>
+                        </div> 
+                    </div>
+                </article>
+                <article class="abstract clearfix">
+                    <div class="abstract-container">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzlhNTYzOGEtN2E5Ni00MmQwLTljODgtNzRjOTYyZjljMzc3XkEyXkFqcGc@._V1_.jpg" alt="Poster art for the 1979 movie Alien" class="abstract-img" loading="lazy">
+                        <h2>Alien</h2>
+                        <h3><em>In space no one can hear you scream</em></h3>
+                        <div class="star-rating" data-fill="5"></div>
+                        <p><em>Alien</em> is a groundbreaking masterpiece that redefined the sci-fi horror genre and 
+                            set a new standard for tension and atmosphere in filmmaking. 
+                            Directed by Ridley Scott, the film masterfully blends science fiction with horror, 
+                            creating a chilling experience that keeps viewers on the edge of their seats. 
+                            From the opening scenes aboard the Nostromo, the film establishes a foreboding atmosphere, 
+                            utilizing haunting visuals and an eerie sound design that immerses the audience in its terrifying world.</p>
+                        <p>The character development in <em>Alien</em> is compelling, particularly through the portrayal of Ripley, 
+                            played by the iconic Sigourney Weaver. Ripley is not just a strong female lead; 
+                            she is a fully realized character whose intelligence and determination shine through in 
+                            the face of overwhelming odds. The dynamics among the crew members add depth to the narrative, 
+                            showcasing a realistic portrayal of human vulnerability and fear. 
+                            As the crew confronts the deadly alien menace, the film explores themes of survival, isolation, 
+                            and the unknown, heightening the psychological tension.</p>
+                        <p>Visually, <em>Alien</em> remains a landmark achievement, with H.R. Giger's design of the alien creature 
+                            and the derelict ship being both haunting and unforgettable. 
+                            The practical effects and set designs create a tangible realism that enhances the horror. 
+                            The film's pacing is expertly crafted, with suspenseful moments building to a chilling climax 
+                            that leaves audiences breathless. Ridley Scott's direction ensures that every frame contributes 
+                            to the film's overall sense of dread, making <em>Alien</em> a timeless classic that continues to influence 
+                            filmmakers today...</p>
+                        <div class="readMoreContainer">
+                            <a href="article.html" class="readMoreBtn">Read More</a>
+                        </div> 
+                    </div>
+                </article>
+                <article class="abstract clearfix">
+                    <div class="abstract-container">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" alt="Poster for the 2008 movie The Dark Knight" class="abstract-img" loading="lazy">
+                        <h2>The Dark Knight</h2>
+                        <h3><em>Welcome to a world without rules</em></h3>
+                        <div class="star-rating" data-fill="4.5"></div>
+                        <p><em>The Dark Knight</em> is an extraordinary cinematic achievement that elevated the superhero genre to new heights. 
+                            Directed by Christopher Nolan, the film masterfully blends action, drama, and psychological depth, 
+                            creating a complex narrative that challenges the conventions of traditional comic book movies. 
+                            From the moment the Joker, played brilliantly by Heath Ledger, makes his chaotic entrance, 
+                            the film immerses viewers in a world of moral ambiguity and tension, 
+                            setting the stage for a gripping exploration of heroism and villainy.</p>
+                        <p>Heath Ledger's portrayal of the Joker is nothing short of iconic. 
+                            At the time, his casting was considered highly controversial.
+                            His performance is chilling and captivating, bringing a unique brand of chaos that
+                            forces both Batman and the audience to confront their understanding of morality. 
+                            Christian Bale's Batman is equally compelling, navigating the fine line between 
+                            hero and vigilante as he grapples with the consequences of his actions. 
+                            The film's supporting cast, including Aaron Eckhart as Harvey Dent, 
+                            adds layers to the narrative, enriching the story with their own 
+                            arcs of transformation and conflict.</p>
+                        <p>Visually, <em>The Dark Knight</em> is a stunning film, with Nolan's direction showcasing breathtaking 
+                            action sequences and a meticulously crafted Gotham City. 
+                            The cinematography captures both the grandeur and the grit of the city, 
+                            enhancing the film's dark tone. Hans Zimmer's score is equally powerful, 
+                            elevating the tension and emotion throughout the film. 
+                            While the pacing is generally strong, 
+                            there are moments where the narrative could feel a bit convoluted, 
+                            which slightly detracts from the overall experience...</p>
+                        <div class="readMoreContainer">
+                            <a href="article.html" class="readMoreBtn">Read More</a>
+                        </div> 
+                    </div>
+                </article>
+            </div>
+        </section>   
+            <div class="pagination-container">
+                <div class="pagination">
+                    <h2>PAGE</h2>
+                    <a class="active" href="#" aria-label="Current page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" aria-label="Next page">&raquo;</a>
+                </div>  
+            </div>
+    </main>
+    <button onclick="topFunction()" id="topBtn" title="Go to top" aria-label="Scroll to the top of the page">Top</button>
+    <hr>
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <a href="home.html">LOGO</a>
+            </div>
+            <div class="social-media-icons">
+                <div><a href="https://twitter.com/memme_93" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <div><a href="https://www.instagram.com/melinahansson/" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div><a href="https://letterboxd.com/melinahansson/" aria-label="Follow us on Letterboxd" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-letterboxd"></i></a>
+                </div>
+                <div><a href="https://stopexit.tumblr.com/" aria-label="Follow us on Tumblr" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-tumblr"></i></a>
+                </div>
+                <div><a href="https://steamcommunity.com/profiles/76561198346319473/" aria-label="Follow us on Steam" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-steam"></i></a>
+                </div>
+                <div><a href="https://discord.com/users/melliemooo" aria-label="Follow us on Discord" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <p>Copyright &copy; 2025 Melina Hansson</p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="home.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="browse.html" aria-label="Browse the content">Browse</a></li>
+                <li><a href="connect.html" aria-label="Connect with us">Connect</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="projekt.js"></script>
+    <script src="https://kit.fontawesome.com/9a7aecf1ab.js" crossorigin="anonymous"></script>
+</body>
+</html>
