@@ -188,6 +188,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, & Opera
   }
 
+  const topButton = document.getElementById("topBtn");
+  topButton.addEventListener("click", topFunction);
+
   //GALLERY//
   filterSelection("all");
 
